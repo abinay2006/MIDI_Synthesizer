@@ -2,6 +2,8 @@
 
 This project implements a MIDI synthesizer on an FPGA that receives serial MIDI note messages and produces the corresponding audio through a speaker. The RTL diagram is given below <img width="1362" height="457" alt="Screenshot 2026-10-18 at 3 37 09 PM" src="https://github.com/user-attachments/assets/cde66903-27f6-4963-b2fc-3b3bb553c854" />
 
+I worked on the code for the file and testbench for the following components: Input synchronizer, SCI receiver, and Accumulator and clock_divider in the DDS.
+
 The VHDL code and testbench is generated for each of the following components and is combined in Midi_Synthesizer_top to make all the components work together:
 
 # 1. Clock Divider (system_clock_generator)
