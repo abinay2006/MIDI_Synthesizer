@@ -4,6 +4,11 @@ This project implements a MIDI synthesizer on an FPGA that receives serial MIDI 
 
 I worked on the code for the file and testbench for the following components: Input synchronizer, SCI receiver, and Accumulator and clock_divider in the DDS.
 
+# How to make it work
+Put all the VHDL code in Vivado and synthesize it. Then generate the bitstream to activate the FPGA (with the constraint file).
+Get a keyboard and connect the MIDI port to a Pmod socket on the Basys 3. Connect the other side of the FPGA to a D/A converter attached to a speaker. Then power the keyboard and press the keys to hear sound!
+
+# Components 
 The VHDL code and testbench is generated for each of the following components and is combined in Midi_Synthesizer_top to make all the components work together:
 
 # 1. Clock Divider (system_clock_generator)
